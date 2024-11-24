@@ -48,3 +48,4 @@ document.addEventListener('DOMContentLoaded', () => {
             saveStatus.textContent = 'Произошла ошибка при сохранении данных.';
         }
     });
+});
