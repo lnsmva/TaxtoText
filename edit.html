@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Редактирование данных</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.svg" alt="Логотип" class="logo-img">
+                TaxtoText
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Частые вопросы</a></li>
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Обратная связь</a></li>
+            </ul>
+            <button class="button">Вход/Регистрация</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="edit-section">
+            <h2> РЕЗУЛЬТАТ. Файл обработан</h2>
+            <div class="editor-container">
+                
+                <div class="image-preview">
+                    <h3>Загруженное изображение</h3>
+                    <img id="uploadedImage" src="" alt="Загруженное изображение">
+                </div>
+
+                <div class="editor">
+                    <h3>Редактор данных</h3>
+                    <div id="editor"></div>
+                    <div style="display: flex; align-items: center; gap: 10px; margin-top: 10px;">
+                    <textarea id="templateEditor" rows="15" cols="50"></textarea>
+
+                    <!-- <button class="cta-btn" id="saveBtn">Сохранить</button> -->
+                    <select id="formatSelect">
+                        <option value="docx">DOCX</option>
+                        <option value="pdf">PDF</option>
+                        <option value="xlsx">XLSX</option>
+                        <option value="accdb">ACCDB</option>
+                    </select>
+                    <button id="saveBtn">Сохранить</button>
+                        <p id="saveStatus"></p>
+                </div>
+            </div>
+            <button class="button" onclick="goBack()" style="margin-top: 30px;">Назад</button>
+        </section>
+    </main>
+
+    <footer1>
+        <p>&copy; 2024 TaxtoText. Все права защищены.</p>
+    </footer1>
+
+    <!-- CodeMirror JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/mode/javascript/javascript.min.js"></script>
+
+    <!-- Подключаем необходимые библиотеки -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pizzip/3.1.1/pizzip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/docxtemplater/3.23.3/docxtemplater.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script src="edit.js"></script>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

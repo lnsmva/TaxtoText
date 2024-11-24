@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaxtoText</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.svg" alt="Логотип" class="logo-img">
+                TaxtoText
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Частые вопросы</a></li>
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Обратная связь</a></li>
+            </ul>
+            <button class="login-btn">Вход/Регистрация</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Система распознавания данных с квитанций и запросов от ОГВ</h1>
+            <p>Автоматическое распознавание данных с квитанций и запросов об оплате от органов государственной власти (ОГВ) формата JPG, PNG, PDF, а также возможность сборки этих данных в удобный для пользователя формат. Генерация документов в Excel, Access, Word, PDF.
+            </p>
+        </section>
+
+        <section class="upload-section">
+            <!-- <h2>Выберите файл</h2> -->
+            <input type="file" id="fileInput">
+            <!-- <label for="fileInput" class="button">Выберите файл</label> -->
+            <div class="container">
+                <div class="upload-area">
+                    <p class="upload-info">Перетащите файл сюда</p>
+                    <p class="supported-files">Поддерживаемые файлы: JPG | PNG | PDF</p>
+                    <label for="fileInput" class="button">Выберите файл</label>
+                </div>
+            </div>
+            <!-- <button id="uploadBtn">Отправить</button> -->
+            <!-- <button class="cta-btn" id="uploadBtn">Отправить</button> -->
+            <p id="statusMessage"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TaxtoText. Все права защищены.</p>
+    </footer>
+
+<!-- 
+    <div class="container">
+        <footer class="footer"> 2024 TaxtoText. Все права защищены.</footer>
+      </div> -->
+
+
+    <script src="script.js"></script>
+</body>
+</html>

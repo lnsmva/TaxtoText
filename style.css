@@ -1,0 +1,302 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.login-btn {
+    background: #00aaff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f4f4f4;
+}
+
+.cta-btn {
+    background: #00aaff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+.upload-btn {
+    background-color: #ff5722; /* Example: Change to a warm orange color */
+    color: #fff; /* Text color remains white */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px; /* Optional: to round the corners */
+}
+
+.upload-btn:hover {
+    background-color: #e64a19; /* Darker shade for hover effect */
+}
+
+.upload-area {
+    border: 2px dashed #d4d4d4;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #CCE0FF;
+    margin: 0 auto;
+}
+
+.upload-info {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.supported-files {
+    font-size: 12px;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* .upload-area.dragover {
+    background-color: #e6f7ff; 
+    border-color: #00aaff; 
+} */
+
+.button {
+    background: #393BE6;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 12px;
+    transition: background-color 0.3s;
+    margin-top: 100px; 
+}
+
+.button:hover {
+    background-color: #202278;
+}
+
+
+.upload-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.file-input {
+    margin: 10px 0;
+}
+
+.auth-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.login-form, .register-form {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    width: 40%;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #393BE6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button_black {
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+} */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 10px 0;
+
+    /* margin-top: auto;
+    width: 100%;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 10px 0; */
+}
+
+footer1 {
+    /* position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 10px 0; */
+
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 10px 0;
+}
+
+/* Общий контейнер для редактора и изображения */
+.editor-container {
+    /* display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+    flex-direction: row-reverse; 
+    min-height: 100vh; */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Две колонки одинакового размера */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Редактор */
+.editor {
+    /* flex: 1;
+    max-width: 60%; */
+    height: 400px; /* Задаём фиксированную высоту редактора */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: auto;
+}
+
+
+/* Превью изображения */
+.image-preview {
+    /* max-width: 35%;
+    text-align: center; */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.image-preview img {
+    /* width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px; */
+    max-width: 100%;
+    max-height: 400px; /* Ограничиваем высоту */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Кнопка */
+.cta-btn {
+    padding: 10px 20px;
+    background-color: #393BE6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cta-btn:hover {
+    background-color: #03324a;
+}
+
+/* Статус сохранения */
+#saveStatus {
+    margin-top: 10px;
+    color: green;
+}
+
+.logo {
+    display: flex;             /* Используем flexbox для выравнивания логотипа и текста */
+    align-items: center;       /* Вертикальное выравнивание по центру */
+    font-size: 24px;           /* Размер шрифта для текста */
+}
+
+.logo-img {
+    width: 30px;              /* Ширина логотипа */
+    height: auto;             /* Высота будет сохраняться пропорционально */
+    margin-right: 10px;       /* Отступ между логотипом и текстом */
+}
+
+
+
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .auth-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login-form, .register-form {
+        width: 90%;
+    }
+}
